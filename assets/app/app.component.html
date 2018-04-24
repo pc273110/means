@@ -2,7 +2,7 @@
 
 <div class="container">
     <div class="row">
-            <app-message [inputMessage]="message"></app-message>
+            <app-message [inputMessage]="message" (editClicked)="message.content = $event"></app-message>
         
     </div>
 </div>
